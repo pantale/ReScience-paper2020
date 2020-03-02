@@ -1,0 +1,157 @@
+@article{Pantale:2005,
+	abstract = {This paper presents an implementation in C++ of an explicit parallel finite element code dedicated to the simulation of impacts. We first present a brief overview of the kinematics and the explicit integration scheme with details concerning some particular points. Then we present the OpenMP parallelization toolkit used in order to parallelize our FEM code, and we focus on how the parallelization of the DynELA FEM code has been conducted for a shared memory system using OpenMP. Some examples are then presented to demonstrate the efficiency and accuracy of the proposed implementations concerning the Speedup of the code. Finally, an impact simulation application is presented and results are compared with the ones obtained by the commercial Abaqus explicit FEM code.},
+	author = {Olivier Pantal{\'e}},
+	doi = {10.1016/j.advengsoft.2005.01.003},
+	journal = {Advances in Engineering Software},
+	keywords = {Large deformations - Plasticity - Impact - C++ - Object-oriented programming - OpenMP - Parallel computing},
+	month = jun,
+	number = {6},
+	pages = {361--373},
+	publisher = {Elsevier},
+	title = {Parallelization of an object-oriented FEM dynamics code: influence of the strategies on the Speedup},
+	url = {https://oatao.univ-toulouse.fr/5378/},
+	volume = {36},
+	year = {2005}
+}
+
+@article{Nistor:2008,
+	abstract = {A numerical implementation of the eXtended Finite Element Method (X-FEM) to analyze
+crack propagation in a structure under dynamic loading is presented in this paper. The arbitrary
+crack is treated by the X-FEM method without re-meshing but using an enrichment
+of the classical displacement-based finite element approximation in the framework of the
+partition of unity method. Several algorithms have been implemented, within an Oriented
+Object framework in C++, in the home made explicit FEM code. The new module, called
+DynaCrack, included in the dynamic FEM code DynELA, evaluates the crack geometry,
+the propagation of the crack and allow the post-processing of the numerical results. The
+module solves the system of discrete equations using an explicit integration scheme. Some
+numerical examples illustrating the main features and the computational efficiency of the
+DynaCrack module for dynamic crack propagation are presented in the last section of the
+paper.},
+	author = {Ionel Nistor and Olivier Pantal{\'e} and Serge Caperaa},
+	doi = {10.1016/j.advengsoft.2007.06.003},
+	journal = {Advances in Engineering Software},
+	keywords = {Partition of unity - Extended finite element method - Finite element programming - Dynamic crack propagation - Dynamic energy release rate},
+	number = {7},
+	pages = {573--587},
+	publisher = {Elsevier},
+	title = {Numerical implementation of the eXtended Finite Element Method for dynamic crack analysis},
+	url = {https://oatao.univ-toulouse.fr/5361/},
+	volume = {39},
+	year = {2008}
+}
+
+@article{Nistor:2007,
+	abstract = {This paper presents an application of the eXtended Finite Element Method for numerical
+modeling of the dynamic cracks propagation. The numerical cracks representation is
+adapted to the time-dependent mechanical formulation, using the Heaviside step function for
+completely cutted elements and the cohesive model for crack tips. In order to find the propagation
+parameters, a crack evolution model is proposed. The numerical implementation is
+achieved in new explicit FE module. A numerical example is proposed for proving the computational
+efficiency of this new module.},
+	author = {Ionel Nistor and Olivier Pantal{\'e} and Serge Caperaa},
+	doi = {10.3166/remn.16.183-198},
+	journal = {Revue europ{\'e}enne de m{\'e}canique num{\'e}rique},
+	keywords = {Partition of unity - Extended finite element method - Dynamic crack propagation - Cohesive model},
+	number = {2},
+	pages = {183--198},
+	publisher = {Lavoisier},
+	title = {Numerical propagation of dynamic cracks using X-FEM},
+	url = {https://oatao.univ-toulouse.fr/5384/},
+	volume = {16},
+	year = {2007}
+}
+
+@article{Menanteau:2006,
+	abstract = {This works concerns the development of a virtual prototyping tool dedicated to electro-thermo-mechanical simulation of power converters. The FEM code, written using an object-oriented language, includes a dual Schur Domain Decomposition Method. The solving of problems including floating subdomains can be performed in steady-state cases, whereas one can couple multi-timestep implicit and explicit integration schemes in transient analysis. The last part of this work is about the study of an industrial benchmark concerning the power converters used in railway transport: the electro-thermal simulation of a switch in transient analysis. This example allows to compare different strategies of tearing into subdomains and the use of different timesteps on the same structure.},
+	author = {Laurent Menanteau and Olivier Pantal{\'e} and Serge Caperaa},
+	doi = {10.3166/remn.15.799-824},
+	journal = {Revue europ{\'e}enne de m{\'e}canique num{\'e}rique},
+	keywords = {Domain decomposition method - Finite element - Object-oriented programming - Parallelization - Multi-time stepping},
+	number = {7-8},
+	pages = {799--824},
+	publisher = {Hermes sciences publications},
+	title = {A methodology for large scale finite element models, including multi-physic, multi-domain and multi-timestep aspects},
+	url = {https://oatao.univ-toulouse.fr/5385/},
+	volume = {15},
+	year = {2006}
+}
+
+@misc{Pantale:2005b,
+	abstract = {Ce travail concerne le d{\'e}veloppement d'une plateforme de prototypage virtuel d{\'e}di{\'e}e {\`a} la simulation num{\'e}rique des probl{\`e}mes en grandes transformations thermom{\'e}caniques rapides. Dans ces situations, le mat{\'e}riau est soumis {\`a} de grandes d{\'e}formations, de forts taux de d{\'e}formations et une forte {\'e}l{\'e}vation de temp{\'e}rature r{\'e}sultant principalement de la d{\'e}formation plastique. Cette sorte de sollicitations, pouvant {\^e}tre tr{\`e}s rapides et fortement non lin{\'e}aire, est g{\'e}n{\'e}ralement rencontr{\'e}e lors de simulations num{\'e}riques de probl{\`e}mes d'usinage ou d'impact et de crash. Deux voies de recherche sont explor{\'e}es dans ce travail: la premi{\`e}re concerne l'aspect exp{\'e}rimental alors que la seconde se focalise sur le d{\'e}veloppement du code de calcul {\'e}l{\'e}ments finis dynamique DynELA. Concernant l'approche exp{\'e}rimentale, l'objectif principal est de d{\'e}velopper un ensemble d'outils (dispositif exp{\'e}rimental et logiciels utilitaires d{\'e}di{\'e}s) dans le but d'identifier les param{\`e}tres constitutifs pour divers mat{\'e}riaux soumis {\`a} des grandes d{\'e}formations et de forts taux de d{\'e}formation. Concernant l'aspect num{\'e}rique, l'objectif est de d{\'e}velopper un code de calcul par {\'e}l{\'e}ments finis explicite bas{\'e} sur une approche de Programmation Orient{\'e}e-Objets en C++. Ce travail a {\'e}t{\'e} r{\'e}alis{\'e} au sein du Laboratoire G{\'e}nie de Production (LGP) de l'Ecole Nationale d'Ing{\'e}nieurs de Tarbes (ENIT).},
+	author = {Olivier Pantal{\'e}},
+	keywords = {Grandes Transformations - M{\'e}thode Elements Finis - Programmation Orient{\'e}e-Objets - Impact - Comportement non lin{\'e}aire - Identification param{\'e}trique - Sciences informatiques - Mod{\'e}lisation et calcul scientifique},
+	month = {July},
+	title = {Plateforme de prototypage virtuel pour la simulation num{\'e}rique en grandes transformations thermom{\'e}caniques rapides},
+	url = {https://oatao.univ-toulouse.fr/5375/},
+	year = {2005}
+}
+
+@article{Pantale:2004,
+	abstract = {During the last 50 years, the development of better numerical methods and more powerful computers has been a major enterprise for the scientific community. In the same time, the finite element method has become a widely used tool for researchers and engineers. Recent advances in computational software have made possible to solve more physical and complex problems such as coupled problems, nonlinearities, high strain and high-strain rate problems. In this field, an accurate analysis of large deformation inelastic problems occurring in metal-forming or impact simulations is extremely important as a consequence of high amount of plastic flow. In this presentation, the object-oriented implementation, using the C++ language, of an explicit finite element code called DynELA is presented. The object-oriented programming (OOP) leads to better-structured codes for the finite element method and facilitates the development, the maintainability and the expandability of such codes. The most significant advantage of OOP is in the modeling of complex physical systems such as deformation processing where the overall complex problem is partitioned in individual sub-problems based on physical, mathematical or geometric reasoning. We first focus on the advantages of OOP for the development of scientific programs. Specific aspects of OOP, such as the inheritance mechanism, the operators overload procedure or the use of template classes are detailed. Then we present the approach used for the development of our finite element code through the presentation of the kinematics, conservative and constitutive laws and their respective implementation in C++. Finally, the efficiency and accuracy of our finite element program are investigated using a number of benchmark tests relative to metal forming and impact simulations.},
+	author = {Olivier Pantal{\'e} and Serge Caperaa and Roger Rakotomalala},
+	doi = {10.1016/j.cam.2003.04.009},
+	journal = {Journal of Computational and Applied Mathematics},
+	keywords = {Explicit integration - Large deformations - Plasticity - Impact - C++ - Object-oriented programming},
+	month = jul,
+	number = {1-2},
+	pages = {341--351},
+	publisher = {Elsevier},
+	title = {Development of an object-oriented finite element program: application to metal-forming and impact simulations},
+	url = {https://oatao.univ-toulouse.fr/5377/},
+	volume = {168},
+	year = {2004}
+}
+
+@article{Pantale:2002,
+	abstract = {During the last fifty years, the development of better numerical methods and more powerful computers has been a major enterprise for the scientific community. Recent advances in computational softwares have lead to the possibility of solving more physical and complex problems (coupled problems, nonlinearities, high strain and high strain rate problems, etc.). The development of object-oriented programming leads to better structured codes for the finite element method and facilitates the development, the maintainability and the expandability of such codes.
+
+This paper presents an implementation in C++ of an explicit finite element program dedicated to the simulation of impacts. We first present a brief overview of the kinematics, the conservative and constitutive laws related to large deformation inelasticity. Then we present the design and the numerical implementation of some aspects developed with an emphasis on the object-oriented programming adopted. Finally, the efficiency and accuracy of the program are investigated through some benchmark tests.},
+	author = {Olivier Pantal{\'e}},
+	doi = {10.1016/S0965-9978(02)00017-0},
+	journal = {Advances in Engineering Software},
+	keywords = {Nonlinear finite-element - Explicit integration - Large deformations - Plasticity - Impact - C++ - Object-oriented programming},
+	month = may,
+	number = {5},
+	pages = {297--306},
+	publisher = {Elsevier},
+	title = {An object-oriented programming of an explicit dynamics code: application to impact simulation},
+	url = {https://oatao.univ-toulouse.fr/5360/},
+	volume = {33},
+	year = {2002}
+}
+
+@book{Lapack:1999,
+	abstract = {LAPACK provides routines for solving systems of simultaneous linear equations, least-squares solutions of linear systems of equations, eigenvalue problems, and singular value problems. The associated matrix factorizations (LU, Cholesky, QR, SVD, Schur, generalized Schur) are also provided, as are related computations such as reordering of the Schur factorizations and estimating condition numbers. Dense and banded matrices are handled, but not general sparse matrices. In all areas, similar functionality is provided for real and complex matrices, in both single and double precision.
+
+LAPACK introduces new routines, as well as extending the functionality of existing routines. For detailed information on the latest improvement since LAPACK 3.0, see here.
+
+The LAPACK library is available from netlib at http://www.netlib.org/lapack/lapack.tgz . It can be included in commercial software packages.},
+	added-at = {2012-09-08T00:12:45.000+0200},
+	address = {Philadelphia, PA},
+	author = {E. Anderson and Z. Bai and C. Bischof and S. Blackford and J. Demmel and J. Dongarra and J. {Du Croz} and A. Greenbaum and S. Hammarling and A. McKenney and D. Sorensen},
+	biburl = {https://www.bibsonomy.org/bibtex/25c78c0343806b9389f6274f68e3c7fdb/peter.ralph},
+	edition = {Third},
+	interhash = {0767b6c275e00549874f5fdef0080443},
+	intrahash = {5c78c0343806b9389f6274f68e3c7fdb},
+	isbn = {0-89871-447-8 (paperback)},
+	keywords = {lapack linear\_algebra methods reference},
+	publisher = {Society for Industrial and Applied Mathematics},
+	timestamp = {2012-09-08T00:12:45.000+0200},
+	title = {{LAPACK} Users' Guide},
+	year = 1999
+}
+
+@book{Levine:2009,
+	author = {John Levine and Levine John},
+	edition = {1st},
+	isbn = {0596155972},
+	publisher = {O{\rq}Reilly Media, Inc.},
+	title = {Flex \& Bison},
+	year = {2009}
+}
+
+@misc{CMake,
+	howpublished = {\url{https://cmake.org}},
+	title = {CMake}
+}
+
