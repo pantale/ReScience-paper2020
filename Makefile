@@ -27,7 +27,7 @@ metadata.tex: metadata.yaml
 # missing file reference and interactively asking you for an alternative.
 
 article.pdf: paper.tex article.tex content.tex bibliography.bib metadata.tex rescience.cls
-	tail -n +6 paper.tex | head -n -4 > content.tex
+	tail -n +12 paper.tex | head -n -4 > content.tex
 	latexmk -f -pdf -pdflatex="xelatex -interaction=nonstopmode" -use-make article.tex
 
 clean:
