@@ -5,7 +5,7 @@
 #  - For a successful replication, it shoudl be prefixed with "[Re]"
 #  - For a failed replication, it should be prefixed with "[¬Re]"
 #  - For other article types, no instruction (but please, not too long)
-title: "[Re] Parallelization of an object-oriented FEM dynamics code"
+title: "[Rp] Parallelization of an object-oriented FEM dynamics code"
 
 # List of authors with name, orcid number, email and affiliation
 # Affiliation "*" means contact author
@@ -34,7 +34,7 @@ keywords: C++, Finite Elements Code, Parallel programming, OpenMP
 code:
   - url: https://github.com/pantale/ReDynELA
   - doi: 
-  - swh: 
+  - swh: swh:1:dir:e45b8b7efb002231f4081c429c4ca33664d0812d
 
 # Data URL and DOI (optional if no data)
 data:
@@ -68,7 +68,7 @@ bibliography: bibliography.bib
 #  * Editorial
 #  * Letter
 #  * Replication
-type: Replication
+type: Reproduction
 
 # Scientific domain of the article (e.g. Computational Neuroscience)
 #  (one domain only & try to be not overly specific)
@@ -83,28 +83,28 @@ language: "C++"
 
 # For example, the URL of the GitHub issue where review actually occured
 review: 
-  - url: 
+  - url: https://github.com/ReScience/submissions/issues/19
 
 contributors:
-  - name:
-    orcid: 
+  - name: Lorena A. Barba
+    orcid: 0000-0001-5812-2711
     role: editor
-  - name:
-    orcid:
+  - name: Konrad Hinsen
+    orcid: 0000-0003-0330-9428
     role: reviewer
-  - name:
-    orcid:
+  - name: 
+    orcid: 
     role: reviewer
 
 # This information will be provided by the editor
 dates:
-  - received:  November 1, 2018
-  - accepted:
-  - published: 
+  - received:  March 2, 2020
+  - accepted:  June 15, 2020
+  - published: June 19, 2020
 
 # This information will be provided by the editor
 article:
-  - number: # Article number will be automatically assigned during publication
+  - number: 8
   - doi:    # DOI from Zenodo
   - url:    # Final PDF URL (Zenodo or rescience website?)
 
@@ -112,5 +112,5 @@ article:
 journal:
   - name:   "ReScience C"
   - issn:   2430-3658
-  - volume: 4
+  - volume: 6
   - issue:  1
