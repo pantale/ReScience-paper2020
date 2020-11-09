@@ -1,5 +1,8 @@
 This repository contains the Latex paper proposed for the ten years reproducibility challenge concerning the parallelization of the DynELA finite element code.
 
+Salut Olivier, Je suis sur projet pour te mettre au courant de l'élvolution de ma formation Git. Bien entendu les notions de "Fork" et "Pull requests". Je progresse tout doucement...
+À bientôt !!!
+
 ***
 ![ <img src="https://i.creativecommons.org/l/by/4.0/88x31.png">](https://i.creativecommons.org/l/by/4.0/88x31.png  "Creative Commons Attribution 4.0 International License")
 
